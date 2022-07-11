@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Sign } from "crypto";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Base = styled.header`
   position: fixed;
@@ -128,8 +128,6 @@ const SignUp = styled.button`
   margin: 15px 0;
 `;
 
-const SignOut = styled.button``;
-
 const Header: React.FC = () => {
   const handleKeyword = () => {};
 
@@ -153,25 +151,27 @@ const Header: React.FC = () => {
               <Link href="/tv">
                 <MenuButton>TV 프로그램</MenuButton>
               </Link>
-              <SearchMenu>
-                <SearchContainer>
-                  <SearchFormWrapper>
-                    <SearchForm>
-                      <SearchLabel />
+            </Menu>
+            <SearchMenu>
+              <SearchContainer>
+                <SearchFormWrapper>
+                  <SearchForm>
+                    <SearchLabel>
+                      <AiOutlineSearch />
                       <SearchInput
                         placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요."
                         onChange={handleKeyword}
                       />
-                    </SearchForm>
-                  </SearchFormWrapper>
-                </SearchContainer>
-              </SearchMenu>
-              <Menu>
-                <SignIn>로그인</SignIn>
-              </Menu>
-              <Menu>
-                <SignUp>회원가입</SignUp>
-              </Menu>
+                    </SearchLabel>
+                  </SearchForm>
+                </SearchFormWrapper>
+              </SearchContainer>
+            </SearchMenu>
+            <Menu>
+              <SignIn>로그인</SignIn>
+            </Menu>
+            <Menu>
+              <SignUp>회원가입</SignUp>
             </Menu>
           </MenuList>
         </MenuListWrapper>
