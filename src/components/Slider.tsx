@@ -1,8 +1,7 @@
-import ReactSlick, { Settings } from "react-slick";
+import ReactSlider, { Settings } from "react-slick";
 import styled from "@emotion/styled";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { css } from "@emotion/react";
-import { ReactNode } from "react";
 
 const ArrowButton = styled.button<{ pos?: "left" | "right" }>`
   padding: 16px;
@@ -46,12 +45,12 @@ const DEFAULT_SETTINGS: Settings = {
   swipe: true,
   draggable: true,
   prevArrow: (
-    <ArrowButton>
+    <ArrowButton pos="left">
       <MdArrowBackIos />
     </ArrowButton>
   ),
   nextArrow: (
-    <ArrowButton>
+    <ArrowButton pos="right">
       <MdArrowForwardIos />
     </ArrowButton>
   ),
@@ -59,11 +58,11 @@ const DEFAULT_SETTINGS: Settings = {
 
 interface Props {
   settings?: Settings;
-  children: ReactNode;
+  children?: JSX.Element | JSX.Element[];
 }
 
-const Slider: React.FC<Props> = ({ settings = DEFAULT_SETTINGS, children }) => {
-  return <ReactSlick {...settings}>{children}</ReactSlick>;
-};
+const Slider: React.FC<Props> = ({ settings = DEFAULT_SETTINGS, children }) => (
+  <ReactSlider {...settings}>{children}</ReactSlider>
+);
 
 export default Slider;

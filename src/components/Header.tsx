@@ -3,11 +3,12 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Base = styled.header`
   position: fixed;
+  margin: 0 auto;
   top: 0;
   left: 0;
   background-color: white;
   text-align: center;
-  box-shadow: rgb(0 0 0 / 0%) 0px 1px 0px 0px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 0px 0px;
   width: 100%;
   height: 62px;
   z-index: 10;
@@ -25,7 +26,6 @@ const MenuList = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
-  overflow: hidden;
 `;
 
 const Menu = styled.li`
@@ -33,7 +33,7 @@ const Menu = styled.li`
   align-items: center;
   height: 62px;
   flex-shrink: 0;
-  &:not(:first-child) {
+  &:not(:first-of-type) {
     margin-left: 24px;
   }
 `;
@@ -148,6 +148,8 @@ const Header: React.FC = () => {
               <Link href="/">
                 <MenuButton>영화</MenuButton>
               </Link>
+            </Menu>
+            <Menu>
               <Link href="/tv">
                 <MenuButton>TV 프로그램</MenuButton>
               </Link>

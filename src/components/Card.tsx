@@ -36,7 +36,7 @@ const Image = styled.img`
 `;
 
 const Info = styled.div`
-  text-align: center;
+  text-align: left;
   width: 100%;
 `;
 
