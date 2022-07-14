@@ -14,13 +14,6 @@ const Header = styled.header`
   align-items: center;
 `;
 
-const Title = styled.h2`
-  color: #000;
-  font-size: 19px;
-  font-weight: 700;
-  margin: 8px 0;
-`;
-
 const ContentsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
