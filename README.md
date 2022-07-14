@@ -18,4 +18,3 @@ React와 TypeScript, 그리고 라이브러리들을 연습해보기 위해 만�
 - axios를 이용하여 API 사용
 - react-slick을 이용하여 슬라이더 제작
 - react-query를 이용하여 데이터 페칭
--
