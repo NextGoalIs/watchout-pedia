@@ -8,6 +8,8 @@ import { AiFillEye, AiOutlinePlus } from "react-icons/ai";
 import { FaPen } from "react-icons/fa";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { Rating } from "@mui/material";
+import DefaultInfo from "../features/movie/detail/DefaultInfo";
+import Similar from "../features/movie/detail/Similar";
 
 const Base = styled.div`
   position: relative;
@@ -296,8 +298,14 @@ const MovieDetail: React.FC = () => {
             </TopInfo>
             <BottomInfo>
               <ContentSectionContainer>
-                {/* <DefaultInfo />
-          <Similar /> */}
+                <DefaultInfo
+                  title={data.data.title}
+                  year={year}
+                  genres={genres}
+                  runtime={data.data.runtime}
+                  overview={data.data.overview}
+                />
+                <Similar id={id} />
               </ContentSectionContainer>
             </BottomInfo>
           </Base>
