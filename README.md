@@ -1,4 +1,5 @@
 # Watchout Pedia(왓챠피디아 클론 코딩)
+[링크](https://nextgoalis.github.io/watchout-pedia/)
 
 React와 TypeScript, 그리고 라이브러리들을 연습해보기 위해 만든 왓챠피디아 클론코딩입니다. 서버는 구현하지 않았고, [TMDB](https://www.themoviedb.org/?language=ko)의 API를 이용하였습니다.
 
