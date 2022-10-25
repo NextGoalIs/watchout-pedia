@@ -2,9 +2,7 @@
 
 React와 TypeScript, 그리고 라이브러리들을 연습해보기 위해 만든 왓챠피디아 클론코딩입니다. 서버는 구현하지 않았고, [TMDB](https://www.themoviedb.org/?language=ko)의 API를 이용하였습니다.
 
-> 현재 Router로 인한 오류로 영화(메인)페이지, 영화 상세 페이지만 열람 가능합니다. 최대한 빨리 수정하도록 하겠습니다.
-
-> **가끔 TMDB쪽 문제로 사진이 뜨지 않거나, 야한사진이 뜰 수 있습니다!!!**
+> **가끔 TMDB쪽 문제로 사진이 뜨지 않을 수 있습니다**
 
 ![movie](https://user-images.githubusercontent.com/75665640/178959717-54fe8f3e-2eba-4a98-bc76-22313a33625e.PNG)
 - */movie*
