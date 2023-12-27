@@ -10,7 +10,7 @@ const Base = styled.div``;
 function App() {
   return (
     <Base>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/tv" element={<TvPage />} />
