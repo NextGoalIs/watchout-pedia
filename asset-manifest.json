@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/watchout-pedia/static/css/main.09b99c6f.css",
-    "main.js": "/watchout-pedia/static/js/main.9e820c0a.js",
+    "main.js": "/watchout-pedia/static/js/main.16eb6884.js",
     "static/js/787.bc5c5c93.chunk.js": "/watchout-pedia/static/js/787.bc5c5c93.chunk.js",
     "static/media/slick.svg": "/watchout-pedia/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/watchout-pedia/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/watchout-pedia/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/watchout-pedia/index.html",
     "main.09b99c6f.css.map": "/watchout-pedia/static/css/main.09b99c6f.css.map",
-    "main.9e820c0a.js.map": "/watchout-pedia/static/js/main.9e820c0a.js.map",
+    "main.16eb6884.js.map": "/watchout-pedia/static/js/main.16eb6884.js.map",
     "787.bc5c5c93.chunk.js.map": "/watchout-pedia/static/js/787.bc5c5c93.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09b99c6f.css",
-    "static/js/main.9e820c0a.js"
+    "static/js/main.16eb6884.js"
   ]
 }
