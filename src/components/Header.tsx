@@ -181,7 +181,7 @@ const Header: React.FC = () => {
         <MenuListWrapper>
           <MenuList>
             <Menu>
-              <Link href="/">
+              <Link href={`${process.env.PUBLIC_URL}/`}>
                 <TextLogo>
                   <span className="primary">WATCHOUT</span>
                   <span>PEDIA</span>
@@ -189,12 +189,12 @@ const Header: React.FC = () => {
               </Link>
             </Menu>
             <Menu>
-              <Link href="/">
+              <Link href={`${process.env.PUBLIC_URL}/`}>
                 <MenuButton>영화</MenuButton>
               </Link>
             </Menu>
             <Menu>
-              <Link href="/tv">
+              <Link href={`${process.env.PUBLIC_URL}/tv`}>
                 <MenuButton>TV 프로그램</MenuButton>
               </Link>
             </Menu>
