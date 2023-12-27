@@ -18,20 +18,20 @@ const LatestMovieSection: React.FC = () => {
 
   const getYear = (date: string) => date.split("-")[0];
 
-  return (
+  return isLoading || !data ? (
+    <div>Loading...</div>
+  ) : !data.data.poster_path ? (
+    <></>
+  ) : (
     <Base>
       <Title>최근 개봉작</Title>
-      {isLoading || !data ? (
-        <div>Loading...</div>
-      ) : (
-        <Card
-          linkUrl={`/movie/${data.data.id}`}
-          title={data.data.title}
-          posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}${data.data.poster_path}`}
-          voteAverage={data.data.vote_average}
-          year={getYear(data.data.release_date)}
-        />
-      )}
+      <Card
+        linkUrl={`/movie/${data.data.id}`}
+        title={data.data.title}
+        posterPath={`${process.env.REACT_APP_IMAGE_PREFIX}${data.data.poster_path}`}
+        voteAverage={data.data.vote_average}
+        year={getYear(data.data.release_date)}
+      />
     </Base>
   );
 };
